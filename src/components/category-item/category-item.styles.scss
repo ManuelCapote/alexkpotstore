@@ -1,0 +1,63 @@
+@use "sass:color";
+@use "../../variables" as *;
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 320px;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition:
+        transform $transition-speed,
+        box-shadow $transition-speed;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $card-shadow-hover;
+    }
+
+    &_body {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 20px 20px;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.5) 60%,
+            transparent 100%
+        );
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+
+        p {
+            margin: 0 0 12px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        a {
+            margin-top: auto;
+            display: inline-block;
+            padding: 8px 20px;
+            background: $primary-color;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background $transition-speed;
+
+            &:hover {
+                background: color.adjust($primary-color, $lightness: -10%);
+            }
+        }
+    }
+}
