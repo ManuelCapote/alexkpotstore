@@ -17,4 +17,4 @@ const CategoryItem = ({ image, name, description, link }) => {
   )
 }
 
-export default CategoryItem
+export default CategoryItem 
