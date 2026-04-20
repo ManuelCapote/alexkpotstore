@@ -11,14 +11,17 @@
     display: flex;
     align-items: center;
     margin-right: 24px;
+    text-decoration: none;
 
     .logo {
-      width: 42px;
-      height: 42px;
-      transition: transform $transition-speed;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #f9fafb;
+      transition: color $transition-speed;
 
       &:hover {
-        transform: rotate(20deg) scale(1.1);
+        color: #a5b4fc;
       }
     }
   }

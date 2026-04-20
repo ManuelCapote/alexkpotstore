@@ -2,15 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 import NavBar from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
+import Shop from "./routes/shop/shop.component";
 import SignIn from "./routes/sign-in/sign-in.component";
-
-const Shop = () => {
-  return (
-    <>
-      <h1>Here Goes the Shop Page</h1>
-    </>
-  );
-};
 
 function App() {
   return (

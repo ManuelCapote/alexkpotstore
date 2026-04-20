@@ -1,0 +1,60 @@
+@use "sass:color";
+@use "../../variables" as *;
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  padding: 64px 24px;
+
+  &__card {
+    max-width: 420px;
+    width: 100%;
+    padding: 40px 32px;
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    text-align: center;
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      color: #f9fafb;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+  }
+
+  &__google {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    background: $primary-color;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background $transition-speed, transform $transition-speed;
+
+    &:hover {
+      background: color.adjust($primary-color, $lightness: -8%);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &__note {
+    margin: 20px 0 0;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+}

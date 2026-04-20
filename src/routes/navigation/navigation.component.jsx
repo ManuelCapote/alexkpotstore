@@ -1,6 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 import { Fragment } from "react";
-import SiteLogo from "../../assets/react.svg?react";
 import "./navigation.styles.scss";
 
 const NavBar = () => {
@@ -8,16 +7,11 @@ const NavBar = () => {
     <Fragment>
       <div className="NavBar">
         <Link className="linkLogo" to="/">
-          <div>
-            <SiteLogo className="logo" />
-          </div>
+          <span className="logo">AlexKpot Store</span>
         </Link>
         <div className="links">
           <Link className="nav-link" to="/shop">
             SHOP
-          </Link>
-          <Link className="nav-link" to="/shop">
-            CONTACT
           </Link>
           <Link className="nav-link" to="/sign-in">
             SIGN IN
