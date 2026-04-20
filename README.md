@@ -4,6 +4,8 @@ A small e-commerce front-end built with React and Vite, featuring a landing page
 
 Built as a learning project to practice modern React, client-side routing, SCSS theming, and Firebase integration end-to-end.
 
+**Live demo:** [alexkpotstore.vercel.app](https://alexkpotstore.vercel.app)
+
 ## Tech stack
 
 - **React 19** + **Vite 8** — fast HMR dev environment, modern React features
